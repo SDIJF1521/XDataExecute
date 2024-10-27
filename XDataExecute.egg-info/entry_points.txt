@@ -1,2 +1,2 @@
 [console_scripts]
-create-config = XDataExecute.CreateConfig:main
+create-config = common.CreateConfig:main

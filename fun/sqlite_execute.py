@@ -1,8 +1,6 @@
 # XDataExecute/fun/sqlite_execute
 
-import os
 import sqlite3
-from config.config_data import *
 from .data_class_port import *
 
 

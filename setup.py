@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='XDataExecute',
-    version='0.1.1',
+    version='0.1.4',
     author='LiKaiPeng',
     author_email='Lkpappinventor@outlook.com',
     description='A short description of your library',
@@ -31,7 +31,7 @@ setup(
                       ],
     entry_points={
         'console_scripts': [
-            'create-config=XDataExecute.CreateConfig:main',  # 这里的路径应与您的模块路径相符
+            'create-config=common.CreateConfig:main',  # 这里的路径应与您的模块路径相符
         ],
     },
 )

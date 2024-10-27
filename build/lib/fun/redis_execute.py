@@ -1,6 +1,6 @@
 import redis
 import logging
-from config.config_data import GaiJson
+from common.config.config_data import GaiJson
 from .data_class_port import *
 
 # 配置日志记录

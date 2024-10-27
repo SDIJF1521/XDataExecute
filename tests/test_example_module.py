@@ -1,7 +1,7 @@
 import unittest
 import json
 import os
-from config.creation_config import CreateConfigParent
+from common.config import CreateConfigParent
 
 # 创建一个示例配置类以便于测试
 class ExampleConfig(metaclass=CreateConfigParent):

@@ -1,7 +1,7 @@
 # XDataExecute/fun/mysql_execute.py
 
 import pymysql
-from config.config_data import *
+from common.config.config_data import *
 from .data_class_port import *
 
 

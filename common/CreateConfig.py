@@ -1,8 +1,8 @@
 # XDataExecute/CreateConfig.py
 
 import argparse
-from config import get_config_classes
-from config.create import DataConfigFile
+from .config import get_config_classes
+from .config.create import DataConfigFile
 
 
 def main():

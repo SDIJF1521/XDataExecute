@@ -3,7 +3,7 @@
 import os
 import json
 import importlib.util
-from config.creation_config import *
+from common.config.creation_config import *
 from abc import ABC, abstractmethod
 
 
