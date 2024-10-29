@@ -32,7 +32,11 @@ class MyData(type):
 
     @classmethod
     # 调用字典
-    def get_class(cls, config_file=None):
+    def get_class(cls):
+        return dict(zip(cls.data_name_list, cls.data_class_list))
+
+    @classmethod
+    def get_convenient_class(cls, config_file=None):
         for i in range(len(cls.convenient_class_list)):
             print(cls.convenient_class_list[i]())
             signature = inspect.signature(cls.convenient_class_list[i].__init__)

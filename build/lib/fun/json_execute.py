@@ -7,7 +7,7 @@ from .data_class_port import *
 class Json(metaclass=MyData):
     data_name = 'json'
 
-    def __init__(self,config_json=None):
+    def __init__(self):
         self.file = None
 
     def read(self):

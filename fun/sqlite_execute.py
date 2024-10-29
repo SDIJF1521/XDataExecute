@@ -7,7 +7,7 @@ from .data_class_port import *
 class SqlIte(metaclass=MyData):
     data_name = 'sqlite'
 
-    def __init__(self,config_json=None):
+    def __init__(self):
         self.database = None
 
     def execute(self, expression: str, *data):

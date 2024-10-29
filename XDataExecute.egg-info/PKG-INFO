@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: XDataExecute
-Version: 0.1.4
+Version: 0.1.5
 Summary: A short description of your library
 Home-page: https://github.com/SDIJF1521/XDataExecute
 Author: LiKaiPeng
@@ -47,12 +47,13 @@ your_project/
 │   ├── redis_execute.py     # Redis 数据库操作
 │   └── sqlite_execute.py     # SQLite 数据库操作
 │
-├── config/
-|   ├── __init__.py
-│   ├── config_data.py       # 配置数据处理
-│   └── ...                   # 其他配置处理库
+├── common
+|   ├── config/
+|   |  ├── __init__.py
+│   |  ├── config_data.py       # 配置数据处理
+|   |  ├── CreateConfig.py
+│   |  └── ...                   # 其他配置处理库
 │
-├── CreateConfig.py
 |
 └── README.md                 # 本文档
 ```
@@ -281,9 +282,8 @@ your_project/
 - 注意:高级查询的方法是使用元类的方法间接的调用容器类进行操作，我们不能直接使用容器类进行操作。并且在使用高阶方法是我们需要辨别要操作的是文件容器还是数据库，因为这两类的操作方法是不同的例如mysql的高阶操作借助 `execute`方法实现，而json的高阶操作借助 `read` 读取方法和 `deposit` 存入方法实现
 - 调用容器类: 容器类的调用方法是使用 `MyData` $元类的$ `get_class` $方法$，容器操作类的具体调用方法如下
   ```python
-  MyData.get_class(config_file)['name']
+  MyData.get_class()['name']
   '''
-  config_file: 配置文件路径
   name: 容器名称
   '''
   ```
@@ -359,3 +359,4 @@ sqlite = MyData.get_class(config_file)['msqlite']
 #### 拓展容器类
 
 #### 拓展操作类
+### 获取配置文件资料

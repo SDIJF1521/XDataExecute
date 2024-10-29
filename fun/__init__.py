@@ -1,5 +1,5 @@
 # XDataExecute/fun/__init.py
-
+import os
 import importlib.util
 from abc import ABC, abstractmethod
 from .data_class_port import *
@@ -39,7 +39,6 @@ folder_path = "./DataExecute"  # 假设 plug 文件夹与 main.py 在同一目�
 import_classes_from_folder(folder_path)
 
 
-# 便捷操作策略基类
 class DataProt(ABC):
     data_vessel_select = MyData.get_class()
     dic = {'varchar (255)': "%s",
@@ -72,7 +71,7 @@ class DataProt(ABC):
         """
         pass
 
-# mysql便捷操作类
+
 class MysqlExecute(DataProt):
 
     def data_read_execute(self, form_name: str, screening_condition: str = None, field: str = None, data: dict = None):
@@ -122,7 +121,7 @@ class MysqlExecute(DataProt):
                 else:
                     self.data_vessel_select['mysql'].execute(template % f'{i}=%s', data[i])
 
-# sqlite便捷操作类
+
 class SqlIteExecute(DataProt):
 
     def data_read_execute(self, form_name: str, screening_condition: str = None, field: str = None, data: dict = None):
@@ -172,7 +171,7 @@ class SqlIteExecute(DataProt):
                 else:
                     self.data_vessel_select['sqlite'].execute(template % f'{i}=%s', data[i])
 
-# json 便捷操作类
+
 class JsonExecute(DataProt):
 
     def data_read_execute(self, form_name: str, screening_condition: str = None, field: str = None, data: dict = None):
