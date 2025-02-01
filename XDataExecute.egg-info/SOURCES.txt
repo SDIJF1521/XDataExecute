@@ -19,4 +19,3 @@ fun/json_execute.py
 fun/mysql_execute.py
 fun/redis_execute.py
 fun/sqlite_execute.py
-tests/test_example_module.py

@@ -1,7 +1,7 @@
 # XDataExecute/fun/json_execute.py
 
 import json
-from .data_class_port import *
+from .data_class_port import MyData
 
 
 class Json(metaclass=MyData):

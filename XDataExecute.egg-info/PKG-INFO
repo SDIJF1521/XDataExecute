@@ -1,28 +1,18 @@
 Metadata-Version: 2.1
 Name: XDataExecute
-Version: 0.1.5
+Version: 0.1.6
 Summary: A short description of your library
 Home-page: https://github.com/SDIJF1521/XDataExecute
 Author: LiKaiPeng
 Author-email: Lkpappinventor@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
-Requires-Dist: async-timeout==4.0.3
-Requires-Dist: cffi==1.17.1
-Requires-Dist: cryptography==43.0.1
-Requires-Dist: numpy==2.1.2
-Requires-Dist: pandas==2.2.3
-Requires-Dist: pycparser==2.22
-Requires-Dist: PyMySQL==1.1.1
-Requires-Dist: python-dateutil==2.9.0.post0
-Requires-Dist: pytz==2024.2
-Requires-Dist: redis==5.1.1
-Requires-Dist: six==1.16.0
-Requires-Dist: tzdata==2024.2
 
 # XDataExecute
 
@@ -360,3 +350,5 @@ sqlite = MyData.get_class(config_file)['msqlite']
 
 #### 拓展操作类
 ### 获取配置文件资料
+
+

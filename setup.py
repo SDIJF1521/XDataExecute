@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='XDataExecute',
-    version='0.1.5',
+    version='0.1.6',
     author='LiKaiPeng',
     author_email='Lkpappinventor@outlook.com',
     description='A short description of your library',

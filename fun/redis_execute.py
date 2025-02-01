@@ -1,7 +1,7 @@
 import redis
 import logging
 from common.config.config_data import GaiJson
-from .data_class_port import *
+from .data_class_port import MyData
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO)

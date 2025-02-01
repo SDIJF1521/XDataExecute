@@ -1,12 +1,35 @@
-# XDataExecute/fun/__init.py
+# 在 data_class_port.py 文件中
+def get_convenient_class(cls, config_file):
+    new_dict = {}
+    for i in range(len(cls.convenient_class_list)):
+        item = cls.convenient_class_list[i]
+        if callable(item):  # 检查对象是否可调用
+            new_dict[i] = item()  # 仅添加可调用对象的调用结果
+        else:
+            print(f"Warning: Item at index {i} is not callable.")
+    return new_dict
+
+
+# 在 __init__.py 文件中的 DataExecute 类的 __init__ 方法中
+class DataExecute:
+    def __init__(self, name: str, config_file=None):
+        self.data_dic: dict = {'mysql': MysqlExecute(config_file),
+                            'sqlite': SqlIteExecute(config_file),
+                            'json': JsonExecute(config_file)}
+        self.name = name
+        # 更新 self.data_dic 时使用修改后的 get_convenient_class 方法
+        self.data_dic.update(data_class_port.MyData.get_convenient_class(config_file))
+
+
+# 其他部分代码保持不变
 import os
 import importlib.util
 from abc import ABC, abstractmethod
-from .data_class_port import *
-from .sqlite_execute import *
-from .mysql_execute import *
-from .redis_execute import *
-from .json_execute import *
+from.data_class_port import *
+from.sqlite_execute import *
+from.mysql_execute import *
+from.redis_execute import *
+from.json_execute import *
 
 
 def import_classes_from_folder(folder_path):
@@ -215,7 +238,7 @@ class DataExecute:
                                'sqlite': SqlIteExecute(config_file),
                                'json': JsonExecute(config_file)}
         self.name = name
-        # print(data_class_port.MyData.get_convenient_class())
+        # 更新 self.data_dic 时使用修改后的 get_convenient_class 方法
         self.data_dic.update(data_class_port.MyData.get_convenient_class(config_file))
 
     def data_read_execute(self, form_name: str, screening_condition: str = None, field: str = None):

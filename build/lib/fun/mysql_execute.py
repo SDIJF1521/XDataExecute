@@ -1,8 +1,8 @@
 # XDataExecute/fun/mysql_execute.py
 
 import pymysql
-from common.config.config_data import *
-from .data_class_port import *
+from common.config.config_data import GaiJson
+from .data_class_port import MyData
 
 
 class Mysql(metaclass=MyData):
