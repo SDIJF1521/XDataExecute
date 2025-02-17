@@ -3,7 +3,7 @@
 import os
 import json
 import importlib.util
-from common.config.creation_config import CreateConfigParent
+from src.common.config.creation_config import CreateConfigParent
 from abc import ABC, abstractmethod
 
 
