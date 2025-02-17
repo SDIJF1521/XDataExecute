@@ -6,42 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="343c2dc1-3c6a-40ad-b484-4d520c9d11e2" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XDataExecute.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/CreateConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CreateConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/config/config_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/config_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/config/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/common/config/creation_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/creation_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/data_class_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/data_class_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/json_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/json_execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/mysql_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/mysql_execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/redis_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/redis_execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/fun/sqlite_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fun/sqlite_execute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/CreateConfig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config/config_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config/create.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config/creation_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/XDataExecute-0.1.6-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/XDataExecute-0.1.6.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/data_class_port.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/json_execute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/mysql_execute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/redis_execute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/sqlite_execute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_example_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

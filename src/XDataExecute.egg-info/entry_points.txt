@@ -1,2 +1,2 @@
 [console_scripts]
-create-config = common.create_config:main
+create-config = common.CreateConfig:main

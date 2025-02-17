@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "XDataExecute"
-version = "0.1.6"
+version = "0.1.7"
 authors = [
   { name = "LiKaiPeng", email = "Lkpappinventor@outlook.com" }
 ]
@@ -36,7 +36,7 @@ file = "README.md"
 content-type = "text/markdown"
 
 [project.scripts]
-create-config = "common.create_config:main"
+create-config = "common.CreateConfig:main"
 
 [project.license]
 text = """
