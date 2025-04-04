@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "XDataExecute"
+version = "0.1.8"
+authors = [
+  { name = "LiKaiPeng", email = "Lkpappinventor@outlook.com" }
+]
+description = "A simplified library for interacting with multiple data sources."
+requires-python = ">=3.10"
+dependencies = [
+    "async-timeout==4.0.3",
+    "cffi==1.17.1",
+    "cryptography==43.0.1",
+    "numpy==2.1.2",
+    "pandas==2.2.3",
+    "pycparser==2.22",
+    "PyMySQL==1.1.1",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2024.2",
+    "redis==5.1.1",
+    "six==1.16.0",
+    "tzdata==2024.2"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+urls = { Source = "https://github.com/SDIJF1521/XDataExecute" }
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.scripts]
+create-config = "common.CreateConfig:main"
+
+[project.license]
+text = """
+MIT License
+
+Copyright (c) 2024 SDIJF1521
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
